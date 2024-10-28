@@ -1,0 +1,121 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+    grid: 1fr 7fr / 1fr;
+}
+
+header{
+    background-color: #2798b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.6);
+}
+
+button + button {
+    margin-left: 15px;
+}
+
+button{
+    height: 50px;
+    width: 95px;
+    border-radius: 1rem;
+    background-color: #e4eeee;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 2px 2px rgba(0, 255, 255, 0.6);
+}
+
+button:hover{
+    border: 2px solid green;
+}
+
+button:active{
+    opacity: 0.7;
+}
+
+#content{
+    background-color: #cffcf3;
+    background-image: url("assets/page-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Added for Home Page */
+
+.infograph{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: 25%;
+    width: 60%;
+    top: 15%;
+    left: 0;
+}
+
+h1,h2{
+    color: white;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Added for Menu Page */
+
+.menu-content{
+    color: #cffcf3;
+    background-color: #2798b8;
+    border: 2px solid black;
+    box-shadow: 2px 2px rgba(0, 255, 255, 0.6);
+    border-radius: 1rem;
+    padding: 4px;
+
+    width: 45%;
+    height: 80%;
+    
+    display: grid;
+    grid: 1fr 1fr 1fr / 1fr 2fr;
+}
+
+.menu-left,.menu-right{
+    padding-left: 2px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.menu-right{
+    font-size: 20px;
+    font-weight: 600;
+    border-left: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+/* Added for Contact Page */
+
+.contact-content{
+    color: #cffcf3;
+    background-color: #2798b8;
+    border: 2px solid black;
+    box-shadow: 2px 2px rgba(0, 255, 255, 0.6);
+    border-radius: 1rem;
+    padding: 4px;
+
+    height: 25%;
+    width: 35%;
+}
